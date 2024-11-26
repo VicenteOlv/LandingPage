@@ -1,0 +1,45 @@
+/* Estilos para el modo claro */
+body.light-mode::-webkit-scrollbar {
+    width: 10px; /* Ancho del track del scrollbar */
+}
+
+body.light-mode::-webkit-scrollbar-track {
+    background: #1d593c;
+}
+
+body.light-mode::-webkit-scrollbar-thumb {
+    background: #3a8c65;
+    border-radius: 6px;
+    min-width: 4px; /* Ancho mínimo del thumb del scrollbar */
+    max-width: 4px; /* Ancho máximo del thumb del scrollbar */
+}
+
+body.light-mode::-webkit-scrollbar-thumb:hover {
+    background: #3a8c65;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode::-webkit-scrollbar {
+    width: 10px; /* Ancho del track del scrollbar */
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: #0f172a ;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: white ;
+    border-radius: 6px;
+    min-width: 4px; /* Ancho mínimo del thumb del scrollbar */
+    max-width: 4px; /* Ancho máximo del thumb del scrollbar */
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: white ;
+}
+
+/* Reducir el área del contenido para hacer que el scroll se vea más estrecho */
+.scroll-container {
+    padding-right: 4px; /* Disminuye el espacio en el área del contenido */
+    margin-right: 2px; /* Reduce la distancia entre el contenido y la barra de desplazamiento */
+}
