@@ -74,12 +74,6 @@ const darkTheme = createTheme({
   },
 });
 
-const SkeletonDiv = styled('div')<{ height: number }>(({ theme, height }) => ({
-  backgroundColor: theme.palette.action.hover,
-  borderRadius: theme.shape.borderRadius,
-  height: `${height}px`, // Convert height to string with px
-  content: '" "',
-}));
 
 const LightBackgroundDiv = styled('div')({
   background: 'linear-gradient(to bottom, rgba(94, 175, 136, 1), rgba(0, 128, 0, 0))', // Adjust the colors as needed
