@@ -100,7 +100,7 @@ const imagesModal = [
 ];
 
 const darkImages = [
-  { type: 'message', text: "Bienvenidos a RookieAce" },
+  { type: 'image', src: "/img/herodark.png" },
   { type: 'image', src: "/img/Asignaturas_MainPage.jpg" },
   { type: 'image', src: "/img/Asignaturas_colores.jpg" },
   { type: 'image', src: "/img/documentos.png" },
@@ -112,7 +112,7 @@ const darkImages = [
 ];
 
 const lightImages = [
-  { type: 'message', text: "Bienvenidos a RookieAce" },
+  { type: 'image', src: "/img/hero.png" },
   { type: 'image', src: "/img/asignaturas_light.png" },
   { type: 'image', src: "/img/asignaturas_colores_light.png" },
   { type: 'image', src: "/img/asignaturas_documentos_light.png" },
@@ -161,7 +161,7 @@ export default function DashboardLayoutBasic(props: any) {
       {isDarkMode ? <DarkBackgroundDiv /> : <LightBackgroundDiv />}
       <MenuAppBar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Toolbar id="back-to-top-anchor" variant="dense" sx={{ height: 0, width: 0, padding: 0 }} />
-      <Grid container spacing={3} padding={3}>
+      <Grid container spacing={2} padding={3}>
         {/* Hero Section */}
         <Grid item xs={12}>
           <Box
@@ -174,7 +174,7 @@ export default function DashboardLayoutBasic(props: any) {
               backgroundColor: isDarkMode ? '#0f172a' : '#d5ffe2', // Color oscuro para modo oscuro
               position: 'relative',
               width: '100%',
-              height: { xs: 300, md: 450 }, // Ajusta la altura según sea necesario
+              height: { xs: 300, md: 450, xl: 600 }, // Ajusta la altura según sea necesario
               overflow: 'hidden',
               borderRadius: 10, // Añade bordes redondeados para un mejor efecto visual
             }}
@@ -213,14 +213,15 @@ export default function DashboardLayoutBasic(props: any) {
 
                     }}
                   >
-                    {item.text}
+
+
                   </Box>
                 )}
               </Box>
             ))}
           </Box>
         </Grid>
-        <Grid container spacing={3} padding={3} >
+        <Grid container spacing={2} marginY={8} padding={3} >
           {/* Primer Componente: ¿Qué es RookieAce? */}
           <Grid item xs={12}>
             <Grid container spacing={2} alignItems="center">
@@ -270,7 +271,7 @@ export default function DashboardLayoutBasic(props: any) {
 
           {/* Segundo Componente: ¿Por qué unirte a RookieAce? */}
           <Grid item xs={12}>
-            <Grid container spacing={2} alignItems="center" textAlign="right">
+            <Grid container spacing={2} marginY={10} alignItems="center" textAlign="right">
               <Grid item xs={12} md={4}>
                 <Icon
                   icon={"heroicons:user-group-solid"}
