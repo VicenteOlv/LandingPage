@@ -16,6 +16,7 @@ import Image from 'next/image';
 import InfoModal from './InfoModal'; // Import the InfoModal component
 import { Icon } from '@iconify/react';
 import '../styles/scrollbar.css'; // Importa el archivo CSS personalizado
+import Link from 'next/link';
 
 const floatAnimation = keyframes`
   0% {
@@ -1032,6 +1033,21 @@ export default function DashboardLayoutBasic(props: any) {
           </Box>
         </Grid>
       </Grid>
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          px: 2,
+          mt: 'auto',
+          textAlign: 'center',
+          backgroundColor: (theme) =>
+            theme.palette.mode === 'light' ? '#d5ffe2' : '#1e293b',
+        }}
+      >
+        <Typography variant="body2" color="text.secondary">
+          © {new Date().getFullYear()} rookieAce. Todos los derechos reservados.
+        </Typography>
+      </Box>
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />

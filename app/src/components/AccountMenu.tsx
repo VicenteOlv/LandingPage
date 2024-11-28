@@ -24,12 +24,12 @@ export default function AccountMenu() {
 
   const handleLogin = () => {
     handleClose();
-    window.location.href = 'https://example.com/login'; // Replace with the actual URL
+    window.location.href = 'https://rookieace.netlify.app'; // Replace with the actual URL
   };
 
   const handleSignUp = () => {
     handleClose();
-    window.location.href = 'https://example.com/signup'; // Replace with the actual URL
+    window.location.href = 'https://rookieace.netlify.app/register'; // Replace with the actual URL
   };
 
   return (
